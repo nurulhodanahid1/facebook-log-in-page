@@ -1,0 +1,327 @@
+body{
+    margin: 0;
+}
+
+/********       Header Area Start       ********/
+
+header{
+    background: #3C5A99;
+    padding: 20px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    display: block;
+    margin-bottom: -15px;
+    margin-top: -3px;
+}
+header .logo-area{
+    width: 30%;
+    float: left;
+}
+header .login-area{
+    width: 70%;
+    overflow: hidden;
+}
+.login-area form{
+    float: right;
+}
+.login-area label{
+    display: block;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.login-area input{
+    display: block;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    background-color: #E8F0FE;
+}
+.login-area .username-area{
+    float: left;
+    margin-right: 16px;
+}
+.login-area .password-area{
+    margin-right: 16px;
+    overflow: hidden;
+    float: left;
+}
+.login-area .submit-area{
+    overflow: hidden;
+}
+.login-area a{
+    color: #9CB4D8;
+    text-decoration: none;
+    font-size: 12px;
+}
+.login-area a:hover{
+    text-decoration: underline;
+}
+.login-area input[type="submit"]{
+    background-color: #4d6da8;
+    color: #FFFFFF;
+    border: 1px solid #29487D;
+    margin-top: 16px;
+    padding: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/********        Media Query For Header Area        *****/
+
+@media all and (max-width: 856px){
+    header .logo-area{
+        float: none;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    header .login-area{
+        width: 100%;
+    }
+    .login-area form{
+        float: none;
+        width: 468px;
+        margin: auto;
+    }
+}
+@media all and (max-width: 611px){
+    .login-area .password-area{
+        float: none;
+    }
+    .login-area .username-area{
+        float: none;
+    }
+    .login-area input[type="text"],
+    .login-area input[type="password"]{
+        width: 100%;
+    }
+}
+
+/********       Main Area Start       ********/
+
+.main-area{
+    background-image: linear-gradient(#FDFDFE, #D5DAE9);
+}
+.main-area .img-area{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+.main-area .create-area{
+    width: 45%;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.img-area{
+    margin-top: 0px;
+}
+.create-area{
+    margin-top: 30px;
+}
+.img-area h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #0E385F;
+    font-size: 20px;
+}
+.create-area h1{
+    color: #333333;
+    font-size: 38px;
+    margin: 0;
+}
+.create-area p{
+    font-size: 18px;
+    margin: 0;
+}
+form .form-area{
+    margin: 20px 0;
+}
+.form-area input[type="text"],
+.form-area input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 19px;
+    padding: 8px 6px;
+    color: #999999;
+    margin-bottom: 10px;
+    border: 1px solid #BDC7D8;
+    border-radius: 6px;
+}
+.form-area input[type="text"]:first-child{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+.form-area input[type="text"]:nth-child(2){
+    width: 48%;
+    overflow: hidden;
+}
+.form-area h2{
+    margin: 0;
+    color: #90949C;
+    font-size: 18px;
+}
+.form-area h3{
+    margin: 8px 0 4px 0;
+    color: #90949C;
+    font-size: 18px;
+}
+.form-area select option{
+    padding: 34px;
+}
+.gender-area label{
+    font-size: 18px;
+}
+.birthday-select select{
+    padding: 8px 5px;
+    border: 1px solid #d8ebfd;
+}
+.gender-area{
+    margin-bottom: 10px;
+}
+.create-area .terms{
+    font-size: 12px;
+    color: #8A6666;
+}
+.create-area p:last-child{
+    font-size: 14px;
+    font-weight: bold;
+    color: #8A6666;
+}
+.signup-area input{
+    margin: 10px 0 35px 0;
+    background: linear-gradient(#599b59, #62a549);
+    color: #ffffff;
+    font-size: 19px;
+    padding: 8px 60px;
+    font-weight: bold;
+    border: 2px solid #3B6E22;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.signup-area input:hover{
+    background: linear-gradient(#62a549,#599b59);
+}
+.create-area a{
+    text-decoration: none;
+    color: #385898;
+}
+.create-area a:hover{
+    text-decoration: underline;
+}
+
+/********        Media Query For Main Area        ********/
+
+@media all and (max-width: 1265px){
+    .main-area .img-area{
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .main-area .create-area{
+        text-align: center;
+        width: 100%;
+    }
+    .main-area img{
+        width: 100%;
+    }
+}
+@media all and (max-width: 611px){
+    .main-area .img-area{
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .main-area img{
+        width:100%;
+    }
+    .form-area input[type="text"]:first-child{
+        float: none;
+    }
+    .form-area input[type="text"]:nth-child(2),
+    .form-area input[type="text"]:first-child{
+        width: 100%;
+    }
+    .form-area input[type="text"]:nth-child(3){
+        font-size: 15px;
+        font-weight: none;
+    }
+}
+@media all and (max-width: 400px){
+    .form-area label{
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+
+/********        Footer Area Start        ********/
+
+.footer-area .footer-top{
+    margin-top: 62px;
+}
+
+.footer-top,
+.footer-bottom {
+	overflow: hidden;
+}
+
+.footer-top ul,
+.footer-bottom ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-top ul li,
+.footer-bottom ul li {
+	float: left;
+	margin-right: 16px;
+}
+
+.footer-top a,
+.footer-bottom a {
+    font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+    color: #385898;
+    font-weight: bold;
+}
+.footer-top input{
+    padding: 0 10px;
+}
+.footer-top .u-k{
+    color:#737373;
+    font-size: 12px;
+}
+.footer-top input:hover{
+    cursor: pointer;
+}
+.footer-top a:hover,
+.footer-bottom a:hover {
+	text-decoration: underline;
+}
+.footer-bottom ul li {
+	margin-right: 17px;
+	margin-bottom: 1px;
+}
+
+.copyright p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #737373;
+	margin: 22px 0 20px 0;
+}
+/********        Media Query For Footer Area        ********/
+
+@media all and (max-width: 611px){
+    .footer-area{
+        text-align: center;
+        
+    }
+    .footer-area .footer-top{
+            margin-top: 47px;
+    }
+}
